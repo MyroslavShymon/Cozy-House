@@ -1,0 +1,62 @@
+.slick-list {
+    overflow: hidden;
+    width: 100%;
+    grid-area: slick-list;
+} 
+
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+
+.friends__information .slick-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 46px;
+    border: 2px solid #e9c6ad;
+    color: rgba(77,63,53,1);
+    position: relative;
+    transition-duration: 0.5s;
+    font-size: 0;
+} 
+.friends__information .slick-arrow:hover{
+    background-color: #e9c6ad;
+    border: 2px solid rgba(105,76,55,1);
+}
+
+.friends__information .slick-arrow.slick-prev{
+    background-image: url(../media/arrow-right.svg);
+} 
+.friends__information .slick-arrow.slick-next{
+    background-image: url(../media/arrow-left.svg);
+} 
+.friends__information .slick-dots{
+    display: flex;
+    grid-area: lis;
+    margin: 8px 0;
+} 
+.friends__information .slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+} 
+.friends__information .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgba(105,76,55,1);
+}
+.friends__information .slick-dots li.slick-active button{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #f1cdb3;
+    border: 1px solid rgba(105,76,55,1);
+}  
+@media (max-width : 480px){
+    .friends__information .slick-arrow{
+        display: none!important;
+    }
+}

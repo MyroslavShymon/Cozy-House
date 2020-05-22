@@ -1,0 +1,328 @@
+@media screen and (min-width : 1600px){
+
+
+}
+@media (max-width : 1200px){
+    .title{
+        font-size: 42px;
+    }
+    .header__paragraph{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .logo__meaning{
+        font-size: 15px;
+    }
+    .header__photo{
+        min-height: 55vw;
+        bottom: -5vw;
+    }
+    .about{
+        grid-template-columns: 3fr 5fr;
+    }
+    .ft-qst__title{
+        font-size: 30px;
+    }
+    address[class^="ft-qst__address"]{
+        font-size: 20px;
+    }
+    .about__information{
+        padding: 0;
+    }
+    .about__information p{
+        font-size: 20px;
+    }
+    .donation{
+        padding: 5vh;
+    }
+    .donation__information{
+        width: 90%;
+    }
+    .donation__name{
+        font-size: 20px;
+    }
+    .footer__photo{
+        height: 90%;
+    }
+    .menu__item{
+        margin-right: 9.5px;
+    }
+}
+@media (orientation: portrait) and (max-width : 1200px){
+    .header {
+        height: 100vh;
+        grid-template-rows: 1fr 3fr;
+    }
+}
+@media (orientation: landscape) and (max-width : 960px) {
+    .header {
+        height: 100vh;
+    }
+}
+@media (orientation: landscape) and (max-width : 760px) {
+    .header {
+        height: 100vh;
+    }
+}
+@media (max-width : 960px){
+    .header{
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 1fr 1fr 4fr;
+        grid-template-areas: ". logo-960 ."
+                             ". menu-960 ."
+                             ". inform-960 .";
+        height: 100vh;
+        justify-items: center;
+    }
+    .logo{
+        grid-area: logo-960;
+    }
+    .menu{
+        grid-area: menu-960;
+        font-size: 21.5px;
+    }
+    .header__inform{
+        grid-area: inform-960;
+        justify-items: center;
+        text-align: center;
+    }
+    .header__photo{
+        display: none;
+    }
+    .logo__meaning{
+        text-align: center;
+    }
+    .button{
+        width: 250px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .header__paragraph{
+        margin: 0 5px;
+    }
+    .menu__item{
+        margin-right: 10px;
+    }
+    .about{
+        padding: 5vh 0;
+    }
+    .about__information, .about__photo{
+        justify-self: center;
+        grid-column: 1 / 3;
+    } 
+    .about__information{
+        grid-row: 1 / 2;
+    }
+    .about__photo{
+        grid-row: 2 / 3;
+    }
+    .donation{
+        grid-template-rows: repeat(2, 1fr);
+        text-align: center;
+        justify-items: center;
+    }
+    .donation__information, .donation__photo{
+        grid-column: 1 / 3;
+        justify-items: center;
+    }
+    .donation__photo{
+        grid-row: 2 / 3;
+        justify-self: center;
+    }
+    .donation__paragraph{
+        font-size: 16px;
+    }
+    .donation__address{
+        font-size: 17px;
+    }
+    .donation__name{
+        font-size: 25px;
+    }
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer__photo{
+        display: none;
+    }
+    .title{
+        line-height: 45px;
+    }
+    .friends{
+        grid-template-rows: 1fr 4fr 1fr 1fr;
+    }
+    .friends__information{
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    .friends__next-btn{
+        display: none;
+    }
+}
+@media screen and (min-width : 760px){
+    .header__menu{
+        display: none;
+    }
+}
+@media screen and (max-width : 760px){
+    .about__information{
+        grid-row-gap: 15px;
+    }
+    .footer{
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 10px;
+    }
+    .ft-qst{
+        grid-column: 1 / 3;
+        width: 80%;
+        grid-row-gap: 10px;
+    }
+    .ft-qst:nth-child(1), .ft-qst:nth-child(2){
+        grid-template-columns: 1fr 7fr;
+    }
+    .ft-qst__title{
+        justify-self: start;
+        grid-column: 1/3;
+    }
+    .help__information{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "help-1 help-2 help-3"
+                             "help-4 help-5 help-6"
+                             "help-7 help-8 help-9";
+    }
+    .help__item:nth-child(1){
+        grid-area: help-1;
+    }
+    .help__item:nth-child(2){
+        grid-area: help-2;
+    }
+    .help__item:nth-child(3){
+        grid-area: help-3;
+    }
+    .help__item:nth-child(4){
+        grid-area: help-4;
+    }
+    .help__item:nth-child(5){
+        grid-area: help-5;
+    }
+    .help__item:nth-child(6){
+        grid-area: help-6;
+    }
+    .help__item:nth-child(7){
+        grid-area: help-7;
+    }
+    .help__item:nth-child(8){
+        grid-area: help-8;
+    }
+    .help__item:nth-child(9){
+        grid-area: help-9;
+    }
+    .help__information{
+        margin: 0;
+    }
+    .help__title{
+        padding: 0;
+    }
+    .friends{
+        grid-template-columns: none;
+        grid-template-rows: repeat(3,auto);
+    }
+    .friends__button{
+        margin: 0 0 20px 0;
+    }
+    .friends__information{
+        grid-template-columns: 1fr 7fr 1fr;
+    }
+    .friends__item{
+        animation: none;
+    }
+    .frn-item-2{
+        position: relative;
+        z-index: 1000;
+    }
+    .frn-item-1, .frn-item-3{
+        position: absolute;
+        z-index: 50;
+        opacity: 0.2;
+    }
+    .title{
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 30px;
+    }
+    .frn-item-1{
+        left: 35px;
+    }
+    .frn-item-3{
+        right: 35px;
+    }
+    .friends__dicoration{
+        display: none;
+    }
+    .header{
+        grid-template-rows: 1fr 4fr;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: ". logo header-adaptive-menu"
+                             ". header__inform .";
+    }
+    .header__menu{
+        display: block;
+    }
+    .logo{
+        grid-area: logo;
+    }
+    .menu{
+        display: none;
+    }
+    .header__inform{
+        grid-area: header__inform;
+        position: static;
+        grid-row-gap: 5px;
+    }
+    .logo__main{
+        font-size: 45px;
+    }
+    .donation__name{
+        font-size: 22px;
+    }
+}
+@media (max-width : 480px){
+    .help__item{
+        margin: 10px;
+    }
+    .donation{
+        padding: 0vw;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .ft-qst{
+        grid-column-gap: 3px;
+    }
+    .about{
+        padding: 0;
+        text-align: center;
+    }
+    .about__information p {
+        font-size: 16px;
+    }
+    .header{
+        height: 100vh;
+    }
+    .header__paragraph {
+        font-size: 16px;
+    }
+    .logo__main{
+        font-size: 40px;
+    }
+}
+@media (max-width : 320px){
+    .title{
+        font-size: 20px;
+    }
+    .header__paragraph, address[class^="ft-qst__address"], .donation__paragraph, .help__name, .about__information p {
+        font-size: 14px;
+    }
+    .donation__name{
+        font-size: 15px;
+    }
+}

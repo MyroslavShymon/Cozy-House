@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cozy House</title>
+    <!--<link rel="shortcut icon" href="pictures/icon.png" type="image/x-icon">-->
+    
+    <!-- SEO 
+	<meta name="description" content="Web page">
+	<meta name="keywords" content="html, webdev, MyroslavShymon">
+    <meta name="author" content="Myroslav Shymon">
+    -->
+    <!--vport-->
+    <!-- Use latest version of IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/normalize.css" rel="stylesheet" >
+    <link href="css/main.css" rel="stylesheet" >
+    <link href="css/media.css" rel="stylesheet" >
+    <link href="css/slider.css" rel="stylesheet" >
+    <link href="css/menu.css" rel="stylesheet" >
+</head>
+<body>
+    <header class="header">
+        <img src="media/Dog1.png" alt="dog in header" class="photo header__photo">
+        <div class="logo">
+            <h1 class="title logo__main">Cozy House</h1>
+            <div class="logo__meaning">Shelter for pets in Boston</div>
+        </div>
+
+        <nav class="menu">
+                <a class="menu__item" href="#about">About the shelter</a>
+                <a class="menu__item" href="#friends">Our pets</a>
+                <a class="menu__item" href="#help">To help the shelter</a>
+                <a class="menu__item" href="#footer">Contacts</a>
+        </nav>
+
+        <div class="header__menu-wrapper" >
+            <div class="header__menu header__menu_active" id="menu-toggle"></div>
+        </div>
+
+        <div class="mobile-nav" id="nav-toggle">
+            <div class="mobile-nav__wrapper">
+                <div class="mobile-nav__title">Navigation</div>
+                <ul class="mobile-nav__menu">
+                    <li class="mobile-nav__item"><a href="" class="mobile-nav__link">About the shelter</a></li>
+                    <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Our pets</a></li>
+                    <li class="mobile-nav__item"><a href="" class="mobile-nav__link">To help the shelter</a></li>
+                    <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header__inform">
+            <h2 class="title">
+                Not only people
+                need a house
+            </h2>
+            <p class="header__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida 
+                est in porttitor  porttitor. Duis sodales elementum ipsum, vehicula 
+                condimentum erat fringilla et.
+            </p>
+            <a class="button header__button">
+                Make a friend
+            </a>
+        </div>
+
+
+    </header>
+    <section class="about" id="about">
+        <img src="media/pets2.png" alt="photo_about" class="photo about__photo">
+        <div class="about__information">
+            <h2 class="title">
+                About the shelter
+                “Cozy House”
+            </h2>
+            <p class="about__paragraph">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.
+                </p>
+                <p>
+                    Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis 
+                    ultrices pharetra. Morbi tempus at ante sit amet tristique. 
+                    Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim 
+                    lorem. Sed at ligula et sem mattis gravida ac vel erat.
+                </p>
+            </p>
+        </div>
+    </section>
+    <section class="friends" id="friends">
+        <h2 class="title friends__title">
+            Our friends who
+            are looking for a house
+        </h2>
+        <div class="friends__information">
+            <!--<a href="" class="friends__next-btn frn-but-1" onclick="slideup('friends__item')">
+                <span class="friends__next-btn__dicoration"></span> 
+                <span class="friends__next-btn__dicoration"></span>   
+            ←-->
+            </a>
+            <div class="friends__item">
+                <img src="media/pet_1.png" alt="animal photo" class="photo friends__photo">
+                <h3 class="friends__name">Katrine</h3>
+                <a href="" class="friends__low-btn">
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>                    
+                    Learn More
+                </a>
+            </div>
+            <div class="friends__item">
+                <img src="media/pet_2.png" alt="animal photo" class="photo friends__photo">
+                <h3 class="friends__name">Jennifer</h3>
+                <a href="" class="friends__low-btn">
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>                      
+                    Learn More
+                </a>
+            </div>
+            <div class="friends__item">
+                <img src="media/pet_3.png" alt="animal photo" class="photo friends__photo">
+                <h3 class="friends__name">Woody</h3>
+                <a href="" class="friends__low-btn">
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    Learn More
+                </a>
+            </div>
+            <div class="friends__item">
+                <img data-lazy="media/pet_4.png" alt="animal photo" class="photo friends__photo">
+                <h3 class="friends__name">Murzik</h3>
+                <a href="" class="friends__low-btn">
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    Learn More
+                </a>
+            </div>
+            <div class="friends__item">
+                <img data-lazy="media/pet_5.png" alt="animal photo" class="photo friends__photo">
+                <h3 class="friends__name">Shloma</h3>
+                <a href="" class="friends__low-btn">
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    Learn More
+                </a>
+            </div>
+            <div class="friends__item">
+                <img data-lazy="media/pet_6.png" alt="animal photo" class="photo friends__photo">
+                <h3 class="friends__name">Tom</h3>
+                <a href="" class="friends__low-btn">
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    Learn More
+                </a>
+            </div>
+            <div class="friends__item">
+                <img data-lazy="media/pet_7.png" alt="animal photo" class="photo friends__photo">
+                <h3 class="friends__name">Barsik</h3>
+                <a href="" class="friends__low-btn">
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    Learn More
+                </a>
+            </div>
+            <div class="friends__item">
+                <img data-lazy="media/pet_8.png" alt="animal photo" class="photo friends__photo">
+                <h3 class="friends__name">Kuzya</h3>
+                <a href="" class="friends__low-btn">
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    Learn More
+                </a>
+            </div>
+            <div class="friends__item">
+                <img data-lazy="media/pet_9.png" alt="animal photo" class="photo friends__photo">
+                <h3 class="friends__name">Kuzya</h3>
+                <a href="" class="friends__low-btn">
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    <span class="btn-span"></span>
+                    Learn More
+                </a>
+            </div>
+           <!-- <a href="" class="friends__next-btn frn-but-2" onclick="slidedown('friends__item')">
+                <span class="friends__next-btn__dicoration"></span>
+                <span class="friends__next-btn__dicoration"></span>                
+            →-->
+            </a>
+        </div>
+        <a href="" class="button friends__button">Get to know the rest</a>
+    </section>
+    <section class="help" id="help">
+        <h2 class="title help__title">
+            Than you can help
+            our shelter
+        </h2>
+        <div class="help__information">
+            <div class="help__item">
+                <img src="media/cat-food.svg" alt="help photo" class="photo help__photo">
+                <h3 class="help__name">Pet food</h3>
+            </div>
+            <div class="help__item">
+                <img src="media/ambulance.svg" alt="help photo" class="photo help__photo">
+                <h3 class="help__name">Transportation</h3>
+            </div>
+            <div class="help__item">
+                <img src="media/ball.svg" alt="help photo" class="photo help__photo">
+                <h3 class="help__name">Toys</h3>
+            </div>
+            <div class="help__item">
+                <img src="media/bowl.svg" alt="help photo" class="photo help__photo">
+                <h3 class="help__name">Bowls and cups</h3>
+            </div>
+            <div class="help__item">
+                <img src="media/shampoo.svg" alt="help photo" class="photo help__photo">
+                <h3 class="help__name">Shampoos</h3>
+            </div>
+            <div class="help__item">
+                <img src="media/pills.svg" alt="help photo" class="photo help__photo">
+                <h3 class="help__name">Vitamins</h3>
+            </div>
+            <div class="help__item">
+                <img src="media/syringe.svg" alt="help photo" class="photo help__photo">
+                <h3 class="help__name">Medicines</h3>
+            </div>
+            <div class="help__item">
+                <img src="media/leash.svg" alt="help photo" class="photo help__photo">
+                <h3 class="help__name">Collars / leashes</h3>
+            </div>
+            <div class="help__item">
+                <img src="media/cat.svg" alt="help photo" class="photo help__photo">
+                <h3 class="help__name">Sleeping area</h3>
+            </div>
+        </div>
+    </section>
+    <section class="donation">
+        <div class="donation__photo">
+            <img src="media/Dog_pered_footer.png" alt="donation__photo" class="photo donation__photo">
+        </div>
+        <div class="donation__information">
+            <h2 class="title donation__title">
+                In addition, you 
+                can make a donation
+            </h2>
+            <p class="donation__name">Name of the bank / Type of bank account</p>
+            <address class="donation__address">
+                <img src="media/credit-card.svg" alt="photo__address" class="donation__photo-address">
+                8380 2880 8028 8791 7435
+            </address>
+            <p class="donation__paragraph">
+                Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Maecenas a ipsum at libero sagittis dignissim sed 
+                ac diam. Praesent ultrices maximus tortor et vulputate. Interdum 
+                et malesuada fames ac ante ipsum primis in faucibus. 
+            </p>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <section class="ft-qst">
+            <h2 class="title ft-qst__title" >
+                For questions
+                and suggestions
+            </h2>
+            <img src="media/envelope.svg" alt="photo__address" class="footer__photo-address-1">
+            <address class="ft-qst__address-1">email@shelter.com</address>
+            <img src="media/telephone.svg" alt="photo__address" class="footer__photo-address-2">
+            <address class="ft-qst__address-2">+13 674 567 75 54</address>            
+        </section>
+        <section class="ft-qst ">
+            <h2 class="title ft-qst__title" >
+                We are waiting
+                for your visit 
+            </h2>
+            <img src="media/pin.svg" alt="photo__address" class="footer__photo-address-1">
+            <address class="ft-qst__address-1">
+                Boston, Central Street, 1st
+                (Entrance from the store)
+            </address>
+            <img src="media/pin.svg" alt="photo__address" class="footer__photo-address-2">
+            <address class="ft-qst__address-2">London, South Park, 18st</address>            
+        </section>
+        <img src="media/pes.png" alt="footer_pes" class="footer__photo">
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
